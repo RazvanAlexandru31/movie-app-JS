@@ -12,88 +12,76 @@
     <title>Movie App - JS</title>
   </head>
   <body>
-    <header id="form">
-      <div class="search-widget">
-        <input type="text" id="search" class="search" placeholder="Search..." />
-        <button class="btn"><i class="fas fa-search"></i></button>
+    <section class="movie-section">
+      <header id="form">
+        <div class="search-widget">
+          <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search..."
+          />
+          <button class="btn"><i class="fas fa-search"></i></button>
+        </div>
+      </header>
+
+      <div class="search-list hidden" id="search-list">
+        <!-- <div class="search-list-items">
+          <div class="search-list-images">
+            <img src="https://www.openculture.com/?attachment_id=56360" alt="movies">
+          </div>
+          <div class="search-item-info">
+            <h3>Lord of the Rings</h3>
+            <p>2013</p>
+          </div>
+        </div> -->
       </div>
-    </header>
 
-    <div class="search-list hidden" id="search-list">
-      <!-- <div class="search-list-items">
-        <div class="search-list-images">
-          <img src="https://www.openculture.com/?attachment_id=56360" alt="movies">
+      <div class="movie-card hidden">
+        <div class="card-image">
+          <img
+            src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="movie poster"
+          />
         </div>
-        <div class="search-item-info">
-          <h3>Lord of the Rings</h3>
-          <p>2013</p>
+        <div class="card-body">
+          <span class="card-title">Movie Title</span>
+          <p class="movie-info-1">
+            <span class="card-year">2022</span>
+            <span class="card-time">160min</span>
+            <span class="card-rating">PG-13</span>
+          </p>
+           <p class="movie-info-2">
+            <span class="card-languager">english</span>
+            <span class="card-genre">action</span>
+            <span class="card-released">2020</span>
+          </p>
+          <p class="card-plot">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            numquam ea itaque iure maiores voluptas molestiae reprehenderit nam
+            perspiciatis nostrum!
+          </p>
+          <div class="people">
+          <p class="card-director">
+            Director 
+          </p>
+          <p class="card-writers">
+            Writers
+          </p>
+          <p class="card-stars">
+            Stars
+          </p>
         </div>
-      </div> -->
-    </div>
-
-    <div class="movie-card">
-      <div class="container">
-        <div class="hero">
-          <div class="details">
-            <div class="title1">The Hobbit <span>PG-13</span></div>
-
-            <div class="title2">The Battle of the Five Armies</div>
-
-            <span class="likes">109 likes</span>
-          </div>
-          <!-- end details -->
+        <div class="awards">
+          Awards
         </div>
-        <!-- end hero -->
-
-        <div class="description">
-          <div class="column1">
-            <span class="tag">action</span>
-            <span class="tag">fantasy</span>
-            <span class="tag">adventure</span>
-          </div>
-          <!-- end column1 -->
-
-          <div class="column2">
-            <p>
-              Bilbo Baggins is swept into a quest to reclaim the lost Dwarf
-              Kingdom of Erebor from the fearsome dragon Smaug. Approached out
-              of the blue by the wizard Gandalf the Grey, Bilbo finds himself
-              joining a company of thirteen dwarves led by the legendary
-              warrior, Thorin Oakenshield. Their journey will take them into the
-              Wild; through... <a href="#">read more</a>
-            </p>
-
-            <div class="avatars">
-              <a href="#" data-tooltip="Person 1" data-placement="top">
-                <img
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar1.png"
-                  alt="avatar1"
-                />
-              </a>
-
-              <a href="#" data-tooltip="Person 2" data-placement="top">
-                <img
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar2.png"
-                  alt="avatar2"
-                />
-              </a>
-
-              <a href="#" data-tooltip="Person 3" data-placement="top">
-                <img
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_avatar3.png"
-                  alt="avatar3"
-                />
-              </a>
-            </div>
-            <!-- end avatars -->
-          </div>
-          <!-- end column2 -->
+        <div class="rating">
+          <span class="rating-1">10</span>
+          <span class="rating-2">20</span>
         </div>
-        <!-- end description -->
+        </div>
       </div>
-      <!-- end container -->
-    </div>
-    <!-- end movie-card -->
+    </section>
 
     <script src="script.js"></script>
   </body>
