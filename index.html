@@ -9,9 +9,74 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Movie App - JS</title>
   </head>
   <body>
+    <!-- Swiper -->
+    <section class="swiper-js">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <p>Watch This Year's Hottest Blockbusters</p>
+            <img src="./images/swiper-1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <p>Get endless entertainment</p>
+            <img src="./images/swiper-2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <p>The place to explore, research, and browse movies.</p>
+            <img src="./images/swiper-3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <p>
+              Send kids on adventures with their favorite characters in a space
+              made just for them
+            </p>
+            <img src="./images/swiper-4.jpg" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </section>
+    <section class="lading-page">
+      <div class="container">
+        <div class="right">
+          <div class="image-1">
+            <p>
+              The movie’s data used in the project is fetched from 'OMDb API -
+              The Open Movie Database.'
+            </p>
+          </div>
+        </div>
+        <div class="left">
+          <div class="image-2">
+            <p>
+              A web app created using HTML/CSS/JavaScript that allows a user to
+              search for movies and view some information about the selected
+              movie, such as: actors, plot, movie length, awards, ratings and
+              much more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="movie-section">
       <header id="form">
         <div class="search-widget">
@@ -51,7 +116,7 @@
             <span class="card-time">160min</span>
             <span class="card-rating">PG-13</span>
           </p>
-           <p class="movie-info-2">
+          <p class="movie-info-2">
             <span class="card-languager">english</span>
             <span class="card-genre">action</span>
             <span class="card-released">2020</span>
@@ -62,27 +127,22 @@
             perspiciatis nostrum!
           </p>
           <div class="people">
-          <p class="card-director">
-            Director 
-          </p>
-          <p class="card-writers">
-            Writers
-          </p>
-          <p class="card-stars">
-            Stars
-          </p>
-        </div>
-        <div class="awards">
-          Awards
-        </div>
-        <div class="rating">
-          <span class="rating-1">10</span>
-          <span class="rating-2">20</span>
-        </div>
+            <p class="card-director">Director</p>
+            <p class="card-writers">Writers</p>
+            <p class="card-stars">Stars</p>
+          </div>
+          <div class="awards">Awards</div>
+          <div class="rating">
+            <span class="rating-1">10</span>
+            <span class="rating-2">20</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- End of Swiper JS -->
     <script src="script.js"></script>
   </body>
 </html>
