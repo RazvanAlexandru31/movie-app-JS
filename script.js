@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
 });
 
 const getMovies = async (userInput) => {
-  const API = `http://www.omdbapi.com/?s=${userInput}&page=1 &apikey=c497e7d4`;
+  const API = `https://www.omdbapi.com/?s=${userInput}&page=1 &apikey=c497e7d4`;
   const response = await fetch(API);
   const data = await response.json();
   // console.log(data)
@@ -76,7 +76,7 @@ const displayMovieCard = () => {
     movie.addEventListener("click", async () => {
       // console.log(movie.dataset.id);
       movieCard.classList.remove("hidden");
-      const cardAPI = `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=c497e7d4`;
+      const cardAPI = `https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=c497e7d4`;
       const response = await fetch(cardAPI);
       const data = await response.json();
       console.log(data);
