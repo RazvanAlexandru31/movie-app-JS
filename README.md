@@ -8,4 +8,4 @@ Movie Search App using OMDb API(Developed with HTML5, CSS3 and JS).The user is a
 ![screenshot3](./screenshots/movie-app-3.png)
 ![screenshot4](./screenshots/movie-app-4.png)
 
-You can check the app right [here].(https://razvanalexandru31.github.io/movie-app-JS/) 
+You can check the app right [here](https://razvanalexandru31.github.io/movie-app-JS/).
